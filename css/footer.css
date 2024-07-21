@@ -1,0 +1,128 @@
+.footer {
+    padding: 45px 0;
+    background-color: var(--primary-color-dark-grey);
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer__logo-text {
+    max-width: 127px;
+    width: 100%;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+}   
+.footer__text {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+}
+
+.footer__text-wrapper {
+    text-align: center;
+}
+
+.footer__phone {
+    font-size: 24px;
+    line-height: calc(28 /24);
+    margin-bottom: 3px;
+}
+
+.footer__button {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: var(--primary-color-white);
+    border-bottom: 1px solid var(--primary-color-white);
+}
+
+
+@media (max-width: 1024px) {
+    .footer__img {
+    width: 60px;
+    height: 60px;
+    }
+    .footer__phone {
+        font-size: 21px;
+        line-height: calc(25 /21);
+        margin-bottom: 4px;
+    }
+    .footer__button {
+        font-size: 13px;
+        line-height: calc(15 / 13);
+    }
+}
+
+@media (max-width: 680px) {
+    .footer__text {
+        max-width: 160px;
+        text-align: center;
+    }
+    .footer__phone{
+        font-size: 18px;
+        line-height: calc(21 /18);
+        margin-bottom: 2px;
+    }
+    .footer__logo-wrapper{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 582px) {
+    .footer__img {
+        width: 44px;
+        height: 44px;
+    }
+    .footer__logo-text {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+    .footer__phone, .footer__text, .footer__button{
+        display: none;
+    }
+    .footer__text-wrapper {
+        background-image: url(../img/Phone.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 44px 44px;
+        display: flex;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .footer__img {
+        width: 30px;
+        height: 30px;
+    }
+    .footer__logo-text {
+        font-size: 8px;
+        line-height: calc(9 / 8);
+    }
+    .footer__phone, .footer__text, .footer__button{
+        display: none;
+    }
+    .footer__text-wrapper {
+        background-image: url(../img/Phone.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        display: flex;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,142 @@
+
+.header {
+    padding: 49px 0 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    min-height: 732px;
+    width: 100%;
+    background-image: url(../img/banner.png);
+    background-size: 1600px 732px;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.header::after {
+    content: "";
+        position: absolute;
+        inset: 0;
+        min-height: 732px;
+        width: 100%;
+        background-color: rgba(47, 50, 75, 0.85);
+        background-size: 1600px 732px;
+        background-position: top;
+        background-repeat: no-repeat;
+        z-index: -1;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+}
+
+.header__text {
+    text-align: center;
+}
+
+
+.header__button {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: var(--primary-color-white);
+    border-bottom: 1px solid var(--primary-color-white);
+}
+
+@media (max-width:1024px) {
+    .header {
+        padding: 34px 0 35px;
+    }
+    .header__phone {
+        font-size: 21px;
+        line-height: calc(25/ 21);
+    }
+    .header__text {
+        font-size: 13px;
+        line-height: calc(15/ 13);
+    }
+    .header::before {
+        background-size: 1024px 528px;
+        min-height: 528px;
+    }
+    .header::after {
+        background-size: 1024px 528px;
+        min-height: 528px;
+    }
+}
+
+@media (max-width:660px) {
+    .header::before {
+        background-size: 441px 390px;
+        min-height: 441px;
+    }
+    .header::after {
+        background-size: 441px 390px;
+        min-height: 441px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header {
+        padding: 19px 0 0px;
+    }
+    
+    .header__phone{
+        display: none;
+    }
+
+    .header__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__button{
+        color: transparent;
+        border: none;
+        background-image: url(../img/Phone.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        display: flex;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .header::before {
+        background-size: 1024px 528px;
+        max-height: 528px;
+        height: 100%;
+
+    }
+    
+    .header::after {
+        background-size: 1024px 528px;
+        max-height: 528px;
+        height: 100%;
+    }
+
+
+
+}
+
+
+@media (max-width:471px) {
+    .header::before {
+        background-size: 441px 310px;
+        min-height: 435px;
+    }
+    
+    .header::after {
+        background-size: 441px 310px;
+        min-height: 435px;
+    }
+}

@@ -1,0 +1,212 @@
+.about-section {
+    padding: 35px 0 70px;
+    text-align: center;
+    color: var(--primary-color-grey);
+    margin: 0 auto;
+    max-width: 884px;
+}
+
+.about-section__title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: calc(41 / 35);
+    margin-bottom: 25px;
+}
+
+.about-section__text {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: calc(26 / 22);
+    margin-bottom: 47px;
+    display: inline-block;
+}
+
+.about-section__text::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 2px;
+    top: 13px;
+    left: -66px;
+    background-color: var(--primary-color-grey);
+}
+
+.about-section__text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 2px;
+    top: 13px;
+    right: -66px;
+    background-color: var(--primary-color-grey);
+}
+
+.about-section__advantages {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    max-width: 742px;
+    margin: 0 auto 50px;
+}
+
+.about-section__advantages-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section__advantages-item {
+    display: flex;
+    flex-basis: 195px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-section__number-item {
+    padding: 32px 32px;
+    font-weight: 500;
+    font-size: 57px;
+    line-height: 100%;
+    background-image: url(../img/Ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 122px 122px;
+    color: var(--primary-color-white);
+}
+
+.about-section__text-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+}
+
+@media (max-width:1024px) {
+    .about-section {
+        max-width: 812px;
+    }
+    .about-section__title {
+        font-size: 32px;
+        line-height: calc(38 / 32);
+        max-width: 812px;
+        margin-bottom: 23px;
+    }
+    .about-section__text {
+        font-size: 20px;
+        line-height: calc(23 / 20);
+    }
+    .about-section__text::before{
+        width: 40px;
+    }
+    .about-section__text::after{
+        width: 40px;
+    }
+    .about-section__advantages {
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        max-width: 666px;
+    }
+    .about-section__number-item {
+        font-size: 50px;
+        line-height: calc(61 / 52);
+        background-size: 104px;
+    }
+    .about-section__advantages-item {
+        gap: 26px;
+        max-width: 180px;
+        width: 100%;
+    }
+    .about-section__text-item {
+        font-size: 18px;
+        line-height: calc(21 / 18);
+    }
+    .about-section__advantages-list {
+        max-width: 870px;
+    }
+
+}   
+
+@media (max-width:760px) {
+    .about-section {
+        max-width: 700px;
+    }
+    .about-section__title {
+        font-size: 26px;
+        line-height: calc(29 / 26);
+        max-width: 812px;
+        margin-bottom: 23px;
+    }
+    .about-section__text {
+        font-size: 20px;
+        line-height: calc(24 / 20);
+    }
+    .about-section__text::before{
+        right: -46;
+    }
+    .about-section__text::after{
+        left: -46;
+    }
+    .about-section__advantages {
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        max-width: 466px;
+    }
+    .about-section__number-item {
+        font-size: 38px;
+        line-height: calc(44 / 38);
+        background-size: 90px;
+        gap: 12px;
+    }
+    .about-section__advantages-item {
+        gap: 20px;
+        max-width: 160px;
+        width: 100%;
+    }
+    .about-section__text-item {
+        font-size: 15px;
+        line-height: calc(19 / 15);
+    }
+    .about-section__advantages-list {
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width:610px) {
+    .about-section__number-item {
+        background-size: 78px;
+    }
+    .about-section__text-item {
+        font-size: 13px;
+        line-height: calc(15 / 13);
+    }
+}
+
+@media (max-width:540px) {
+    .about-section__number-item {
+        background-size: 70px;
+    }
+    .about-section__text-item {
+        font-size: 11px;
+        line-height: calc(13 / 11);
+        gap: 12px;
+    }
+}
+
+@media (max-width:461px) {
+    .about-section__advantages-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about-section__number-item {
+        background-size: 104px;
+    }
+    .about-section__text-item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(21 / 18);
+        gap: 26px;
+    }
+}
