@@ -1,105 +1,104 @@
 
 .header {
-    padding: 49px 0 60px;
-    position: relative;
-    z-index: 10;
+    padding: 0 0 35px;
 }
 
-.header::before {
+.header__img {
+    position: relative;
     content: "";
-    position: absolute;
+    display: block;
     inset: 0;
+    object-fit:cover;
+    width: auto;
     min-height: 732px;
-    width: 100%;
-    background-image: url(../img/banner.png);
-    background-size: 1600px 732px;
-    background-position: top;
-    background-repeat: no-repeat;
     z-index: -1;
 }
 
-.header::after {
-    content: "";
-        position: absolute;
-        inset: 0;
-        min-height: 732px;
-        width: 100%;
-        background-color: rgba(47, 50, 75, 0.85);
-        background-size: 1600px 732px;
-        background-position: top;
-        background-repeat: no-repeat;
-        z-index: -1;
-}
-
 .header__wrapper {
+    position: absolute;
+    content: "";
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 200px;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-    line-height: calc(28 / 24);
 }
 
-.header__text {
+.header__img-wrapper::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    display: flex;
+    width: auto;
+    max-height: 732px;
+    background-color: rgba(47, 50, 75, 0.85);
+    z-index: 1;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+.wrapper__phone {
+    display: flex;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    line-height: calc(28 / 24)
 }
 
-
-.header__button {
+.call-button {
+    display: flex;
+    max-width: max-content;
     font-size: 16px;
     line-height: calc(19 / 16);
     color: var(--primary-color-white);
     border-bottom: 1px solid var(--primary-color-white);
 }
+.header__background {
+    width: 100vw;
+    min-height: 900px;
+} 
+
+.number-phone {
+    margin-bottom: 3px;
+}
+
+
 
 @media (max-width:1024px) {
     .header {
-        padding: 34px 0 35px;
+        padding: 0 0 35px;
     }
-    .header__phone {
+    .wrapper__phone  {
         font-size: 21px;
-        line-height: calc(25/ 21);
+        line-height: calc(25 / 21);
+    }
+    .logo__img {
+        width: 60px;
+        height: 60px;
+    }
+    .call-button  {
+        font-size: 13px;
+        line-height: calc(15/ 13);
     }
     .header__text {
         font-size: 13px;
         line-height: calc(15/ 13);
     }
-    .header::before {
-        background-size: 1024px 528px;
-        min-height: 528px;
-    }
-    .header::after {
-        background-size: 1024px 528px;
-        min-height: 528px;
+    .header__wrapper {
+        padding: 0 100px;
     }
 }
 
 @media (max-width:660px) {
-    .header::before {
-        background-size: 441px 390px;
-        min-height: 441px;
-    }
-    .header::after {
-        background-size: 441px 390px;
-        min-height: 441px;
-    }
-
     .container {
         padding: 0 15px;
     }
-    
-    .header {
-        padding: 19px 0 0px;
-    }
-    
-    .header__phone{
-        display: none;
-    }
-
-    .header__img {
-        width: 30px;
-        height: 30px;
-    }
-
     .header__button{
         color: transparent;
         border: none;
@@ -110,33 +109,37 @@
         width: 24px;
         height: 24px;
     }
-    
-    .header::before {
-        background-size: 1024px 528px;
-        max-height: 528px;
-        height: 100%;
-
+    .header__img {
+        min-height: 663px;
     }
-    
-    .header::after {
-        background-size: 1024px 528px;
-        max-height: 528px;
-        height: 100%;
+    .header__img-wrapper::after {
+        max-height: 663px;
+        
     }
-
-
-
-}
-
-
-@media (max-width:471px) {
-    .header::before {
-        background-size: 441px 310px;
-        min-height: 435px;
-    }
-    
-    .header::after {
-        background-size: 441px 310px;
-        min-height: 435px;
+    .header__wrapper {
+        padding: 0 40px;
     }
 }
+
+@media (max-width:582px) {
+    .logo__img {
+        width: 44px;
+        height: 44px;
+    }
+    .wrapper__phone  {
+        font-size: 17px;
+        line-height: calc(21 / 17);
+        
+    }
+    .call-button  {
+        position: fixed;
+        transform: scale(0);
+        
+    }
+    .number-phone {
+        margin-bottom: 0;
+    }
+    .header__wrapper {
+        padding: 0 15px;
+    }
+} 

@@ -62,7 +62,7 @@
 
 @media (max-width: 680px) {
     .footer__text {
-        max-width: 160px;
+        max-width: 140px;
         text-align: center;
     }
     .footer__phone{
@@ -75,51 +75,75 @@
     }
 }
 
+@media (max-width: 583px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    .footer__text {
+        order: 2;
+    }
+}
 @media (max-width: 582px) {
-    .footer__img {
-        width: 44px;
-        height: 44px;
+    .footer {
+        padding: 29px 0 15px;
+        background-image: linear-gradient(to top, var(--primary-color-dark-grey) 37%,
+                            var(--primary-color-footer-grey) 37%) ;
+    }
+    .footer__wrapper {
+        display: flex;
     }
     .footer__logo-text {
         font-size: 12px;
         line-height: calc(14 / 12);
     }
-    .footer__phone, .footer__text, .footer__button{
-        display: none;
+    .wrapper__phone  {
+        font-size: 14px;
+        line-height: calc(18 / 14);
     }
-    .footer__text-wrapper {
+    .call-button  {
+        font-size: 13px;
+        line-height: calc(15/ 13);
+    }
+    .number-phone {
         background-image: url(../img/Phone.svg);
         background-repeat: no-repeat;
         background-position: top right;
-        background-size: 44px 44px;
         display: flex;
+        background-size: 44px 44px;
         width: 44px;
         height: 44px;
+        color: transparent;
+        order: 0;
+    }
+    
+
+    .footer__text {
+        order: 2;
+        height: 47px;
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        line-height: calc(14 / 12);
+        font-size: 12px;
+        margin: 0 auto;
+        opacity: .5;
+
     }
 }
 
-
 @media (max-width: 400px) {
-    .footer__img {
-        width: 30px;
-        height: 30px;
-    }
     .footer__logo-text {
         font-size: 8px;
         line-height: calc(9 / 8);
     }
-    .footer__phone, .footer__text, .footer__button{
-        display: none;
+    .footer__wrapper {
+        gap: 20px;
     }
-    .footer__text-wrapper {
-        background-image: url(../img/Phone.svg);
-        background-repeat: no-repeat;
-        background-position: top right;
-        display: flex;
-        background-size: 24px 24px;
-        width: 24px;
-        height: 24px;
-    }
+    
+    
 }
 
 
