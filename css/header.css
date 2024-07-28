@@ -1,45 +1,15 @@
-
-.header {
-    padding: 0 0 35px;
-}
-
-.header__img {
-    position: relative;
-    content: "";
-    display: block;
-    inset: 0;
-    object-fit:cover;
-    width: auto;
-    min-height: 732px;
-    z-index: -1;
-}
-
 .header__wrapper {
-    position: absolute;
+    position: relative ;
     content: "";
-    top: 60px;
-    left: 0;
+    top: 50px;
+    margin: 0 auto 228px;
+    max-width: 1200px;
     width: 100%;
-    padding: 0 200px;
     z-index: 5;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.header__img-wrapper::after {
-    position: absolute;
-    content: "";
-    inset: 0;
-    display: flex;
-    width: auto;
-    max-height: 732px;
-    background-color: rgba(47, 50, 75, 0.85);
-    z-index: 1;
-    background-position:center;
-    background-repeat: no-repeat;
-}
-
 
 .wrapper__phone {
     display: flex;
@@ -59,6 +29,7 @@
     color: var(--primary-color-white);
     border-bottom: 1px solid var(--primary-color-white);
 }
+
 .header__background {
     width: 100vw;
     min-height: 900px;
@@ -91,7 +62,7 @@
         line-height: calc(15/ 13);
     }
     .header__wrapper {
-        padding: 0 100px;
+        margin-bottom: 76px;
     }
 }
 
@@ -99,37 +70,18 @@
     .container {
         padding: 0 15px;
     }
-    .header__button{
-        color: transparent;
-        border: none;
-        background-image: url(../img/Phone.svg);
-        background-repeat: no-repeat;
-        background-position: top right;
-        display: flex;
-        width: 24px;
-        height: 24px;
-    }
-    .header__img {
-        min-height: 663px;
-    }
-    .header__img-wrapper::after {
-        max-height: 663px;
-        
-    }
-    .header__wrapper {
-        padding: 0 40px;
-    }
+    
 }
 
 @media (max-width:582px) {
-    .logo__img {
-        width: 44px;
-        height: 44px;
-    }
     .wrapper__phone  {
         font-size: 17px;
         line-height: calc(21 / 17);
         
+    }
+    .logo__img {
+        width: 44px;
+        height: 44px;
     }
     .call-button  {
         position: fixed;
@@ -137,9 +89,31 @@
         
     }
     .number-phone {
+        background-image: url(../img/Phone.svg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        color: transparent;
+        order: 0;
         margin-bottom: 0;
     }
     .header__wrapper {
         padding: 0 15px;
     }
 } 
+
+@media (max-width:380px) {
+    .logo__img {
+        width: 30px;
+        height: 30px;
+    }
+    .number-phone{
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+
+}

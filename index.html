@@ -13,8 +13,6 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__img-wrapper">
-            <img class="header__img" src="img/banner.png" alt="">
             <div class="container">
             <div class="header__wrapper">
                     <a href="#call" class="logo">
@@ -26,12 +24,11 @@
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <section class="banner-section">
-            <div class="container">
-                <!-- <img src="/img/banner.png" alt="" class="header__background"> -->
+            
+            <div class="container banner__container">
                     <h1 class="banner-section__title">
                         Заголовок c уникальным торговым предложение по системе 4U
                     </h1>
@@ -39,6 +36,9 @@
                         Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.
                     </p>
                     <a href="#about" class="button">Подробнее</a>
+            </div>
+            <div class="banner__img-wrapper">
+                <img class="banner__img" src="img/banner.png" alt="Контентное изображение">
             </div>
         </section>
         <section class="about-section" id="about">
@@ -75,32 +75,39 @@
             </div>
         </section>
         <section class="reserved-section">
-            <div class="reserved-section__img-wrapper">
-                <img class="reserved-section__img" src="img/question.png" alt="">
-            </div>    
-                <div class="container reserved-section__container">
-                    <h2 class="reserved-section__title">
-                        Остались вопросы?
-                    </h2>
-                    <p class="reserved-section__text">
-                        Оставьте номер телефона, и мы перезвоним вам
-                    </p>
-                    <form action="posthttps://jsonplaceholder.typicode.com/posts" class="form" 
-                            method="post">
-                        <fieldset class="reserved-section__fieldset">
-                            <input  class="reserved-section__input"  type="text" name="login"  placeholder="Ваше имя" required>
-                            <input  class="reserved-section__input" type="tel"  name="tel"  placeholder="Телефон" minlength="11" maxlength="11" required>
-                            <input  class="reserved-section__input" type="email" name="email"  placeholder="E-mail" name="email" required>
-                        </fieldset>
-                    </form>    
-                        <button class="button-reserved button" type="button" id="call">
-                            позвоните мне
-                        </button>
-                        <p class="reserved-section__text-data">
-                            Я даю своё <a class="reserved-section__data" href="#">согласие</a>  на обработку моих персональных данных.
+                    <div class="container reserved-section__container">
+                
+                        <h2 class="reserved-section__title" id="call">
+                            Остались вопросы?
+                        </h2>
+                        <p class="reserved-section__text">
+                            Оставьте номер телефона, и мы перезвоним вам
                         </p>
+                        <form action="posthttps://jsonplaceholder.typicode.com/posts" class="form" 
+                                method="post">
+                            <fieldset class="reserved-section__fieldset">
+                                <input  class="reserved-section__input"  type="text" name="login"  placeholder="Ваше имя" required>
+                                <input  class="reserved-section__input" type="tel"  name="tel"  placeholder="Телефон" minlength="11" maxlength="11" required>
+                                <input  class="reserved-section__input" type="email" name="email"  placeholder="E-mail" name="email" required>
+                            </fieldset>
+                        </form>    
+                            <button class="button-reserved button" type="button">
+                                позвоните мне
+                            </button>
+                            <p class="reserved-section__text-data">
+                                Я даю своё <a class="reserved-section__data" href="#">согласие</a>  на обработку моих персональных данных.
+                            </p>
+                    </div>
+                    <div class="reserved-section__img-wrapper">
+              
+                            
+                        <img class="reserved-section__img" src="img/question.png" alt=""> 
+                    </div> 
                     
-                </div>
+                
+
+
+            
             
         </section>
         <footer class="footer">
