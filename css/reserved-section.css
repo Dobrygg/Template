@@ -116,6 +116,7 @@
     }
     .reserved-section__fieldset {
         max-width: 377px;
+        gap: 20px;
     }
     .reserved-section__input {
         padding: 8px 23px;
@@ -167,6 +168,7 @@
     .reserved-section__fieldset {
         max-width: 290px;
         margin-bottom: 45px;
+        gap: 14px;
     }
 
     .reserved-section__text-data {
