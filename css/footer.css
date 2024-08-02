@@ -3,6 +3,10 @@
     background-color: var(--primary-color-dark-grey);
 }
 
+/* .footer__container {
+    position: relative;
+    /* left: 51px;
+} */
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -12,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .footer__logo-text {
@@ -21,9 +25,12 @@
     font-size: 12px;
     line-height: calc(14 / 12);
 }   
+
 .footer__text {
     font-size: 12px;
     line-height: calc(14 / 12);
+    min-width: 211px;
+    text-align: center;
 }
 
 .footer__text-wrapper {
@@ -49,11 +56,13 @@
     width: 60px;
     height: 60px;
     }
+
     .footer__phone {
         font-size: 21px;
         line-height: calc(25 /21);
         margin-bottom: 4px;
     }
+
     .footer__button {
         font-size: 13px;
         line-height: calc(15 / 13);
@@ -65,49 +74,40 @@
         max-width: 140px;
         text-align: center;
     }
-    .footer__phone{
-        font-size: 18px;
-        line-height: calc(21 /18);
-        margin-bottom: 2px;
-    }
+
     .footer__logo-wrapper{
         gap: 15px;
     }
+
+    .footer__wrapper {
+        flex-shrink: 0;
+    }
 }
 
-@media (max-width: 583px) {
-    .footer__wrapper {
-        flex-wrap: wrap;
-        gap: 70px;
-    }
-    .footer__text {
-        order: 2;
-    }
-}
-@media (max-width: 582px) {
+@media (max-width: 660px) {
     .footer {
         padding: 29px 0 15px;
         background-image: linear-gradient(to top, var(--primary-color-dark-grey) 37%,
                             var(--primary-color-footer-grey) 37%) ;
     }
+
     .footer__wrapper {
         display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
     }
+
     .footer__logo-text {
         font-size: 12px;
         line-height: calc(14 / 12);
+        order: 1;
     }
-    .wrapper__phone  {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-    }
+
     .call-button  {
         font-size: 13px;
         line-height: calc(15/ 13);
     }
     
-    
-
     .footer__text {
         order: 2;
         height: 47px;
@@ -120,7 +120,6 @@
         font-size: 12px;
         margin: 0 auto;
         opacity: .5;
-
     }
 }
 
@@ -129,15 +128,17 @@
         font-size: 8px;
         line-height: calc(9 / 8);
     }
+
     .footer__wrapper {
         gap: 20px;
     }
+
     .footer__text {
         align-items: flex-end;
     }
-    
-    
-}
+}    
+
+
 
 
 

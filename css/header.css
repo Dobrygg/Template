@@ -1,8 +1,8 @@
 .header {
     position: absolute;
-    left: 0;
+    left: 0px;
     right: 0;
-    top: 0;
+    top: -9px;
     padding: 50px 0;
     z-index: 10; 
 }
@@ -72,10 +72,9 @@
     .header__container {
         padding: 0 15px;
     }
-    
 }
 
-@media (max-width:582px) {
+@media (max-width:595px) {
     .header {
         padding: 15px 0;
     }
