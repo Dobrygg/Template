@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.banner__img-wrapper{
+.banner-section__img-wrapper{
     position: absolute;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
     background-color: rgba(47, 50, 75, 0.85);
 }
 
-.banner__img {
+.banner-section__img {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@
     height: 100%;
 }
 
-.banner__container {
+.banner-section__container {
     position: relative;
     /* left: 50px; */
     z-index: 10;
