@@ -74,10 +74,11 @@
     .banner-section__text {
         font-size: 18px;
         line-height: calc(21 / 18);
-        margin-bottom: 61px;
+        max-width: 768px;
+        margin: 0 auto 69px;
     }
     .button {
-        padding: 11px 49px;
+        padding: 13px 49px;
     }
 }
 

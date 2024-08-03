@@ -100,17 +100,19 @@
 
 @media (max-width:1024px) {
     .about-section {
-        max-width: 812px;
+        padding: 70px 0 80px;
     }
     .about-section__title {
         font-size: 32px;
         line-height: calc(38 / 32);
-        max-width: 812px;
-        margin-bottom: 23px;
+        /* max-width: 812px; */
+        margin-bottom: 21px;
+        white-space: nowrap;
     }
     .about-section__text {
         font-size: 20px;
         line-height: calc(23 / 20);
+        margin-bottom: 34px;
     }
     .about-section__text::before{
         width: 40px;
@@ -133,13 +135,16 @@
         max-width: 180px;
         max-height: 182px;
         width: 100%;
+        left: -3px;
+        padding-top: 129px;
     }
     .about-section__text-item {
         font-size: 18px;
         line-height: calc(21 / 18);
     }
     .about-section__advantages-list {
-        max-width: 870px;
+        justify-content: center;
+        gap: 50px;
     }
 
 }   
