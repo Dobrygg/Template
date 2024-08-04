@@ -32,9 +32,8 @@
 
 .banner-section__container {
     position: relative;
-    /* left: 50px; */
     z-index: 10;
-    max-width: 990px;
+    max-width: 1004px;
 }
 
 
