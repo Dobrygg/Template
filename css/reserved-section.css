@@ -7,8 +7,6 @@
 .reserved-section__container {
     text-align: center;
     position: relative;
-    /* left: 51px;  */
-     /* inset: 0;  */
     display: block;
     z-index: 10;
 }
@@ -63,7 +61,7 @@
     max-width: 423px;
     width: 100%;
     gap: 21px;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
 
 }
 .reserved-section__input {
