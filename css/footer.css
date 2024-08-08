@@ -52,15 +52,22 @@
 
 @media (max-width: 1024px) {
     .footer {
-        padding: 37px 0 45px;
+        padding: 37px 0 49px;
+    }
+    .footer__logo-text {
+        font-size: 12px;
+        line-height: calc(17 / 12);
+        font-weight: 500;
     }
     .footer__img {
     width: 60px;
     height: 60px;
     }
+
     .footer__text {
         font-size: 12px;
     }
+
     .footer__phone {
         font-size: 21px;
         line-height: calc(25 /21);

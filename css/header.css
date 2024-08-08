@@ -57,7 +57,7 @@
     }
     .call-button  {
         font-size: 13px;
-        line-height: calc(15/ 13);
+        line-height: calc(16 / 13);
     }
     .header__text {
         font-size: 13px;
