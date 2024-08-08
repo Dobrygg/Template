@@ -1,5 +1,5 @@
 .about-section {
-    padding: 70px 0 79px;
+    padding: 70px 0 73px;
     position: relative;
     text-align: center;
     color: var(--primary-color-grey);
@@ -17,7 +17,7 @@
     font-weight: 700;
     line-height: calc(41 / 35);
     margin-bottom: 25px;
-    /* white-space: nowrap */
+    
 }
 
 .about-section__text {
@@ -53,9 +53,9 @@
 
 .about-section__advantages {
     font-size: 18px;
-    line-height: calc(21 / 18);
-    max-width: 742px;
-    margin: 0 auto 69px;
+    line-height: calc(25 / 18);
+    max-width: 724px;
+    margin: 0 auto 55px;
 }
 
 .about-section__advantages-list {
@@ -78,8 +78,8 @@
     content: counter(count);
     display: flex;
     position: absolute;
-    top: 0px;
-    left: 36px;
+    top: 4px;
+    left: 37px;
     width: 122px;
     height: 122px;
     background-color: var(--primary-color-blue);
@@ -94,7 +94,7 @@
 .about-section__text-item{
     font-weight: 500;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(28 / 20);
 }
 
 @media (max-width:1024px) {
